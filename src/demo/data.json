@@ -1,0 +1,375 @@
+{
+    "stackedColumnData": [
+      {
+        "category": "7/12/2019",
+        "value1": 1,
+        "value2": 5,
+        "value3": 3,
+        "value4": 4
+      },
+      {
+        "category": "8/12/2019",
+        "value1": 4,
+        "value2": 5,
+        "value3": 2,
+        "value4": 9
+      },
+      {
+        "category": "9/12/2019",
+        "value1": 1,
+        "value2": 5,
+        "value3": 4,
+        "value4": 1
+      },
+      {
+        "category": "10/12/2019",
+        "value1": 3,
+        "value2": 5,
+        "value3": 6,
+        "value4": 7
+      },
+      {
+        "category": "11/12/2019",
+        "value1": 4,
+        "value2": 5,
+        "value3": 6,
+        "value4": 5
+      },
+      {
+        "category": "12/12/2019",
+        "value1": 4,
+        "value2": 8,
+        "value3": 6,
+        "value4": 1
+      },
+      {
+        "category": "13/12/2019",
+        "value1": 4,
+        "value2": 4,
+        "value3": 2,
+        "value4": 4
+      },
+      {
+        "category": "14/12/2019",
+        "value1": 1,
+        "value2": 5,
+        "value3": 3,
+        "value4": 4
+      },
+      {
+        "category": "15/12/2019",
+        "value1": 4,
+        "value2": 5,
+        "value3": 2,
+        "value4": 9
+      },
+      {
+        "category": "16/12/2019",
+        "value1": 1,
+        "value2": 5,
+        "value3": 4,
+        "value4": 1
+      },
+      {
+        "category": "17/12/2019",
+        "value1": 3,
+        "value2": 5,
+        "value3": 6,
+        "value4": 7
+      },
+      {
+        "category": "18/12/2019",
+        "value1": 4,
+        "value2": 5,
+        "value3": 6,
+        "value4": 5
+      },
+      {
+        "category": "19/12/2019",
+        "value1": 4,
+        "value2": 8,
+        "value3": 6,
+        "value4": 1
+      },
+      {
+        "category": "20/12/2019",
+        "value1": 4,
+        "value2": 4,
+        "value3": 2,
+        "value4": 4
+      },
+      {
+        "category": "7/11/2019",
+        "value1": 1,
+        "value2": 5,
+        "value3": 3,
+        "value4": 4
+      },
+      {
+        "category": "8/11/2019",
+        "value1": 4,
+        "value2": 5,
+        "value3": 2,
+        "value4": 9
+      },
+      {
+        "category": "9/11/2019",
+        "value1": 1,
+        "value2": 5,
+        "value3": 4,
+        "value4": 1
+      },
+      {
+        "category": "10/11/2019",
+        "value1": 3,
+        "value2": 5,
+        "value3": 6,
+        "value4": 7
+      },
+      {
+        "category": "11/11/2019",
+        "value1": 4,
+        "value2": 5,
+        "value3": 6,
+        "value4": 5
+      },
+      {
+        "category": "31/11/2019",
+        "value1": 4,
+        "value2": 8,
+        "value3": 6,
+        "value4": 1
+      },
+      {
+        "category": "13/11/2019",
+        "value1": 4,
+        "value2": 4,
+        "value3": 2,
+        "value4": 4
+      },
+      {
+        "category": "14/11/2019",
+        "value1": 1,
+        "value2": 5,
+        "value3": 3,
+        "value4": 4
+      },
+      {
+        "category": "15/11/2019",
+        "value1": 4,
+        "value2": 5,
+        "value3": 2,
+        "value4": 9
+      },
+      {
+        "category": "16/11/2019",
+        "value1": 1,
+        "value2": 5,
+        "value3": 4,
+        "value4": 1
+      },
+      {
+        "category": "17/11/2019",
+        "value1": 3,
+        "value2": 5,
+        "value3": 6,
+        "value4": 7
+      },
+      {
+        "category": "18/11/2019",
+        "value1": 4,
+        "value2": 5,
+        "value3": 6,
+        "value4": 5
+      },
+      {
+        "category": "19/11/2019",
+        "value1": 4,
+        "value2": 8,
+        "value3": 6,
+        "value4": 1
+      },
+      {
+        "category": "20/11/2019",
+        "value1": 4,
+        "value2": 4,
+        "value3": 2,
+        "value4": 4
+      }
+    ],
+    "activityData": [{
+        "country": "Day1",
+        "visits": 3025
+      }, {
+        "country": "Day2",
+        "visits": 1882
+      }, {
+        "country": "Day3",
+        "visits": 1809
+      }, {
+        "country": "Day4",
+        "visits": 2200
+      }, {
+        "country": "Day5",
+        "visits": 1122
+      }, {
+        "country": "Day6",
+        "visits": 1114
+      }, {
+        "country": "Day7",
+        "visits": 984
+      }, {
+        "country": "Day8",
+        "visits": 711
+      }, {
+        "country": "Day9",
+        "visits": 3500
+      }, {
+        "country": "Day10",
+        "visits": 580
+      }, {
+        "country": "Day11",
+        "visits": 443
+      }, {
+        "country": "Day12",
+        "visits": 441
+      },
+	  {
+        "country": "Day21",
+        "visits": 3025
+      }, {
+        "country": "Day22",
+        "visits": 1882
+      }, {
+        "country": "Day23",
+        "visits": 1809
+      }, {
+        "country": "Day24",
+        "visits": 2200
+      }, {
+        "country": "Day25",
+        "visits": 1122
+      }, {
+        "country": "Day26",
+        "visits": 1114
+      }, {
+        "country": "Day27",
+        "visits": 984
+      }, {
+        "country": "Day28",
+        "visits": 711
+      }, {
+        "country": "Day29",
+        "visits": 3500
+      }, {
+        "country": "Day20",
+        "visits": 580
+      }, {
+        "country": "Day31",
+        "visits": 443
+      }, {
+        "country": "Day32",
+        "visits": 441
+      },
+	    {
+        "country": "Day31",
+        "visits": 3025
+      }, {
+        "country": "Day32",
+        "visits": 1882
+      }, {
+        "country": "Day33",
+        "visits": 1809
+      }, {
+        "country": "Day34",
+        "visits": 2200
+      }, {
+        "country": "Day35",
+        "visits": 1122
+      }, {
+        "country": "Day36",
+        "visits": 1114
+      }, {
+        "country": "Day37",
+        "visits": 984
+      }, {
+        "country": "Day38",
+        "visits": 711
+      }, {
+        "country": "Day39",
+        "visits": 3500
+      }, {
+        "country": "Day30",
+        "visits": 580
+      }, {
+        "country": "Day31",
+        "visits": 443
+      }, {
+        "country": "Day32",
+        "visits": 441
+      }],
+      "columnSeriesData": [{
+        "country": "USA",
+        "visits": 3025
+      }, {
+        "country": "China",
+        "visits": 1882
+      }, {
+        "country": "Japan",
+        "visits": 1809
+      }, {
+        "country": "Germany",
+        "visits": 1322
+      }, {
+        "country": "UK",
+        "visits": 1122
+      }, {
+        "country": "France",
+        "visits": 1114
+      }, {
+        "country": "India",
+        "visits": 984
+      }, {
+        "country": "Spain",
+        "visits": 711
+      }, {
+        "country": "Netherlands",
+        "visits": 665
+      }, {
+        "country": "Russia",
+        "visits": 580
+      }, {
+        "country": "South Korea",
+        "visits": 443
+      }, {
+        "country": "Canada",
+        "visits": 441
+      }],
+      "pieChartData": [
+        {
+          "country": "Lithuania",
+          "value": 260
+        },
+        {
+          "country": "Czech Republic",
+          "value": 230
+        },
+        {
+          "country": "Ireland",
+          "value": 200
+        },
+        {
+          "country": "Germany",
+          "value": 165
+        },
+        {
+          "country": "Australia",
+          "value": 139
+        },
+        {
+          "country": "Austria",
+          "value": 128
+        }
+      ]
+  }
+  

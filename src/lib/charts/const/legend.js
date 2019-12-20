@@ -1,0 +1,6 @@
+// Legends
+const LEGEND_WITH_VALUE_TEXT = "LEGEND_WITH_VALUE_TEXT";
+
+export default {
+    LEGEND_WITH_VALUE_TEXT
+}

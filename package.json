@@ -1,0 +1,25 @@
+{
+  "name": "amChartLib",
+  "version": "1.0.0",
+  "description": "Describe amChartLib here",
+  "private": true,
+  "scripts": {
+    "build": "nwb build-web-app",
+    "clean": "nwb clean-app",
+    "start": "nwb serve-web-app --reload",
+    "test": "nwb test",
+    "test:coverage": "nwb test --coverage",
+    "test:watch": "nwb test --server"
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.7.13",
+    "@amcharts/amcharts4-geodata": "^4.1.9",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "nwb": "0.23.x"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": ""
+}
