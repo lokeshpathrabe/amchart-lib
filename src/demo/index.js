@@ -8,9 +8,10 @@ import Maps from '../lib/maps/const/map';
 import CHART_LEGENDS from '../lib/charts/const/legend';
 import CHART_SERIES from '../lib/charts/const/series';
 import CHART_BULLETS from '../lib/charts/const/bullet';
-import json from './data.json';
+import chartData from './data.json';
+import mapData from './mapData.json';
 
-import DruvaMaps from "../lib/maps";
+import { DruvaMapsFactory } from "../lib/maps";
 import MAP_SERIES from './../lib/maps/const/series';
 
 am4core.useTheme(am4themes_animated);
@@ -74,13 +75,13 @@ export default function InitDemoChart() {
     }
     let chart1 = new DruvaChart('stackedColumnSeries', stackedColConfig);
 
-    if(json.stackedColumnData.length > 7){
+    if(chartData.stackedColumnData.length > 7){
         const xAxesTemplate = chart1.getChartObj().xAxes.getIndex(0).renderer.labels.template;
         xAxesTemplate.rotation = -90;
         xAxesTemplate.horizontalCenter = "middle";
         xAxesTemplate.verticalCenter = "middle";
     }
-    chart1.bindData(json.stackedColumnData);
+    chart1.bindData(chartData.stackedColumnData);
 
 
 
@@ -109,8 +110,8 @@ export default function InitDemoChart() {
         }
    }
    let chart2 = new DruvaChart('columnSeries', colConfig);
-   chart2.bindData(json.columnSeriesData);
-   setTimeout(() => chart2.bindData(json.activityData), 5000);
+   chart2.bindData(chartData.columnSeriesData);
+   setTimeout(() => chart2.bindData(chartData.activityData), 5000);
 
     // Column Series Chart
     const activityChartConfig = {
@@ -149,7 +150,7 @@ export default function InitDemoChart() {
    chart3.hideYAxes();
    chart3.hideYAxesGridLines();
    chart3.hidexAxesGridLines();
-   chart3.bindData(json.activityData);
+   chart3.bindData(chartData.activityData);
 
     // PieChart
 
@@ -177,20 +178,49 @@ export default function InitDemoChart() {
    }
 
    let pieChart = new DruvaChart('pieChart', pieChartConfig);
-   pieChart.bindData(json.pieChartData);
+   pieChart.bindData(chartData.pieChartData);
    pieChart.setCornerRadius(6);
 
    // world map
    let mapConfig = {
        type: Maps.WORLD_MAP,
-       series: {
+       series: [{
            type: MAP_SERIES.WORLD_MAP_SERIES,
-           list: [
-                
-           ]
-       }
+           exclude: ["AQ"],
+           tooltipText: "{name}: {value}"
+       },
+       {
+            type: MAP_SERIES.USA_MAP_SERIES,
+            tooltipText: "{name}: {value}"
+        }]
    }
 
-   let map = new DruvaMaps('worldmap', mapConfig);
+   let map = DruvaMapsFactory.createMap('worldmap', mapConfig);
+   map.bindData(MAP_SERIES.USA_MAP_SERIES, JSON.parse(JSON.stringify(mapData.USData)));
+   map.bindData(MAP_SERIES.WORLD_MAP_SERIES, JSON.parse(JSON.stringify(mapData.worldData)));
+   map.addHomeButton();
+
+     // world heat map
+     let heatMapConfig = {
+        type: Maps.WORLD_HEAT_MAP,
+        series: [{
+            type: MAP_SERIES.WORLD_MAP_SERIES,
+            exclude: ["AQ"],
+            tooltipText: "{name}: {value}",
+            color: "#00B2E0",
+            heatRules: {
+                colorMin: 4,
+                colorMax: -0.3,
+                legendMinValue: 1000,
+                legendMaxValue: 5000,
+            }
+        }]
+    }
+ 
+    let heatMap = DruvaMapsFactory.createMap('worldHeatmap', heatMapConfig);
+    heatMap.bindData(MAP_SERIES.WORLD_MAP_SERIES, JSON.parse(JSON.stringify(mapData.worldData)));
+    heatMap.addZoomControl();
+    heatMap.addHomeButton();
+    
 }
 

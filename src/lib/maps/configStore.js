@@ -13,8 +13,7 @@ export default class ConfigFactory {
     }
 
     get seriesConfig() {
-        const { type, list } = this.config.series;
-        return [type, { list }];
+        return this.config.series;
     }
 
     get legendConfig() {

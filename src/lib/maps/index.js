@@ -9,12 +9,18 @@ import Series from './components/series';
 
 am4core.useTheme(am4themes_animated);
 
-export default class DruvaMaps {
-    constructor(id, config) {
-        config = {id, ...config};
+class DruvaMaps {
+
+    createMap(id, config) {
+        config.id = id;
         this.validateConfig(config);
-        this.initConfigFactory(config);
-        return this.initMap();
+        let configFactory = this.initConfigFactory(config)
+        let druvaMap = this.initMap(configFactory);
+
+        this.addSeries(druvaMap, configFactory);
+        this.addLegend(druvaMap, configFactory);
+
+        return druvaMap;
     }
 
     validateConfig(config) {
@@ -39,28 +45,30 @@ export default class DruvaMaps {
     }
 
     initConfigFactory(config) {
-        this.configFactory = new ConfigFactory(config);
+        return new ConfigFactory(config);
     }
 
-    initMap() {
-        const [type, cfg] = this.configFactory.mapConfig;
-        let map = new Maps[type](cfg);
-        this.map = map.getMapObj();
-        this.addSeries();
-        this.addLegend();
-        return map;
+    initMap(configFactory) {
+        const [type, cfg] = configFactory.mapConfig;
+        return new Maps[type](cfg);
     }
 
-    addSeries() {
-        const [type, cfg] = this.configFactory.seriesConfig;
-        Series[type].add(this.map, cfg);
+    addSeries(druvaMap, configFactory) {
+        const list = configFactory.seriesConfig;
+        list.forEach((series) => {
+            const { type, ...cfg } = series
+            Series[type].add(druvaMap.getMapObj(), cfg);
+        });
     }
 
-    addLegend() {
-        const config = this.configFactory.legendConfig;
+    addLegend(druvaMap, configFactory) {
+        const config = configFactory.legendConfig;
         if(config) {
             const [type, cfg] = config;
-            Legends[type].add(this.map, cfg);
+            Legends[type].add(druvaMap.getMapObj(), cfg);
         }
     }
 }
+
+const DruvaMapsFactory = new DruvaMaps();
+export { DruvaMapsFactory };

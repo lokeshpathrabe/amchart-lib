@@ -5,5 +5,8 @@ import MapInterface from "./MapInterface";
 export default class WorldHeatMap extends MapInterface{
     constructor(config) {
         super(config);
+        let map = am4core.create(config.id, am4maps.MapChart);
+        map.projection = new am4maps.projections.Miller();
+        this.map = map;
     }
 }
