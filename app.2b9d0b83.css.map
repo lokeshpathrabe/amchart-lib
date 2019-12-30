@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/demo/styles.css"],"names":[],"mappings":"AAAA;AACA;AACA;;AAEA;AACA;AACA;AACA;AACA,C","file":"app.2b9d0b83.css","sourcesContent":["body{\r\n    height: 500px;\r\n}\r\n\r\n.chart-container {\r\n    display: block;\r\n    width: 100%;\r\n    height: 100%;\r\n}"],"sourceRoot":""}
