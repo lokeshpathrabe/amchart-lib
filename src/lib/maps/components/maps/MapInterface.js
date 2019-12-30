@@ -33,12 +33,15 @@ export default class MapInterface {
         this.map.zoomControl = new am4maps.ZoomControl();
     }
 
-    addHomeButton() {
+    addHomeButton(callBack) {
         this.addZoomControl();
         let map = this.map;
         var homeButton = new am4core.Button();
             homeButton.events.on("hit", function(){
             map.goHome();
+            if(typeof callBack === "function"){
+                callBack.call(null, map);
+            }
         });
 
         homeButton.icon = new am4core.Sprite();

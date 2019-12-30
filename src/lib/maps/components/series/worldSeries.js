@@ -12,21 +12,21 @@ export const WorldSeries = {
         worldSeries.exclude = config.exclude;
         worldSeries.useGeodata = true;
 
-        let polygonTemplate = worldSeries.mapPolygons.template;
+        let worldTemplate = worldSeries.mapPolygons.template;
 
         if(tooltipText) {
-            polygonTemplate.tooltipText = tooltipText;
+            worldTemplate.tooltipText = tooltipText;
         }
         
         if(tooltipHTML) {
-            polygonTemplate.tooltipHTML = tooltipHTML;
+            worldTemplate.tooltipHTML = tooltipHTML;
         }
 
         let mapColor = config.color && am4core.color(config.color) || map.colors.getIndex(0)
-        polygonTemplate.fill = mapColor;
-        polygonTemplate.nonScalingStroke = true;
+        worldTemplate.fill = mapColor;
+        worldTemplate.nonScalingStroke = true;
 
-        let hoverState = polygonTemplate.states.create("hover");
+        let hoverState = worldTemplate.states.create("hover");
         hoverState.properties.fill = config.hoverColor && am4core.color(config.hoverColor) || am4core.color("#367B25");
 
         if(config.heatRules) {
@@ -34,21 +34,22 @@ export const WorldSeries = {
             //Set min/max fill color for each area
             worldSeries.heatRules.push({
                 property: "fill",
-                target: polygonTemplate,
+                target: worldTemplate,
                 min: mapColor.brighten(colorMin || 10),
                 max: mapColor.brighten(colorMax || 2)
             });
 
             // Set up heat legend
-            let heatLegend = map.createChild(am4maps.HeatLegend);
+            var heatLegend = map.chartContainer.createChild(am4maps.HeatLegend);
+            heatLegend.valign = "bottom";
+            heatLegend.align = "left";
+            heatLegend.width = am4core.percent(50);
             heatLegend.series = worldSeries;
-            heatLegend.align = "right";
-            heatLegend.valign = "top";
-            heatLegend.width = am4core.percent(20);
-            heatLegend.marginRight = am4core.percent(4);
-            heatLegend.minValue = legendMinValue;
-            heatLegend.maxValue = legendMaxValue;
-            heatLegend.rotation = 90;
+            heatLegend.orientation = "horizontal";
+            heatLegend.padding(20, 20, 20, 20);
+            heatLegend.valueAxis.renderer.labels.template.fontSize = 10;
+            heatLegend.valueAxis.renderer.minGridDistance = 40;
+            heatLegend.markerCount = 5;
 
             // Set up custom heat map legend labels using axis ranges
             var minRange = heatLegend.valueAxis.axisRanges.create();
@@ -59,9 +60,9 @@ export const WorldSeries = {
             maxRange.label.text = legendMaxValue;
         }
 
-        if(config.zoomHandler) {
+        if(config.onZoom) {
             var lastSelected;
-            polygonTemplate.events.on("hit", function(ev) {
+            worldTemplate.events.on("hit", function(ev) {
                 if (lastSelected) {
                     lastSelected.isActive = false;
                 }
@@ -70,17 +71,17 @@ export const WorldSeries = {
                     lastSelected = ev.target;
                 }
 
-                if(typeof config.zoomHandler === "function") {
-                    config.zoomHandler.call(this.map);
+                if(typeof config.onZoom === "function") {
+                    config.onZoom.call(null, map);
                 }
             });
 
             /* Create selected and hover states and set alternative fill color */
-            var ss = polygonTemplate.states.create("active");
-            ss.properties.fill = chart.colors.getIndex(2);
+            var ss = worldTemplate.states.create("active");
+            ss.properties.fill = map.colors.getIndex(2);
 
-            var hs = polygonTemplate.states.create("hover");
-            hs.properties.fill = chart.colors.getIndex(4);
+            var hs = worldTemplate.states.create("hover");
+            hs.properties.fill = map.colors.getIndex(4);
         }
     }
 }

@@ -1,0 +1,1010 @@
+[{
+    "id": "AD",
+    "value1": 2628,
+    "map": ["andorraLow", "andorraHigh"]
+}, {
+    "id": "AE",
+    "value1": 3486,
+    "map": ["uaeLow", "uaeHigh"]
+}, {
+    "id": "AF",
+    "value1": 1859,
+    "map": []
+}, {
+    "id": "AG",
+    "value1": 4117,
+    "map": ["antiguaBarbudaLow", "antiguaBarbudaHigh"]
+}, {
+    "id": "AI",
+    "value1": 3413,
+    "map": ["anguillaLow", "anguillaHigh"]
+}, {
+    "id": "AL",
+    "value1": 4029,
+    "map": ["albaniaLow", "albaniaHigh"]
+}, {
+    "id": "AM",
+    "value1": 2348,
+    "map": ["armeniaLow", "armeniaHigh"]
+}, {
+    "id": "AO",
+    "value1": 1561,
+    "map": ["angolaLow", "angolaHigh"]
+}, {
+    "id": "AQ",
+    "value1": 1013,
+    "map": []
+}, {
+    "id": "AR",
+    "value1": 1908,
+    "map": ["argentinaLow", "argentinaHigh"]
+}, {
+    "id": "AS",
+    "value1": 4947,
+    "map": ["americanSamoaLow", "americanSamoaHigh"]
+}, {
+    "id": "AT",
+    "value1": 2091,
+    "map": ["austriaLow", "austriaHigh"]
+}, {
+    "id": "AU",
+    "value1": 3632,
+    "map": ["australiaLow", "australiaHigh"]
+}, {
+    "id": "AW",
+    "value1": 1676,
+    "map": ["arubaLow", "arubaHigh"]
+}, {
+    "id": "AX",
+    "value1": 4669,
+    "map": []
+}, {
+    "id": "AZ",
+    "value1": 3086,
+    "map": ["azerbaijanLow", "azerbaijanHigh"]
+}, {
+    "id": "BA",
+    "value1": 2238,
+    "map": ["bosniaHerzegovinaLow", "bosniaHerzegovinaHigh", "bosniaHerzegovinaCantonsLow", "bosniaHerzegovinaCantonsHigh"]
+}, {
+    "id": "BB",
+    "value1": 1407,
+    "map": ["barbadosLow", "barbadosHigh"]
+}, {
+    "id": "BD",
+    "value1": 3367,
+    "map": ["bangladeshLow", "bangladeshHigh"]
+}, {
+    "id": "BE",
+    "value1": 4848,
+    "map": ["belgiumLow", "belgiumHigh"]
+}, {
+    "id": "BF",
+    "value1": 2861,
+    "map": ["burkinaFasoLow", "burkinaFasoHigh"]
+}, {
+    "id": "BG",
+    "value1": 4999,
+    "map": ["bulgariaLow", "bulgariaHigh"]
+}, {
+    "id": "BH",
+    "value1": 2248,
+    "map": ["bahrainLow", "bahrainHigh"]
+}, {
+    "id": "BI",
+    "value1": 2804,
+    "map": ["burundiLow", "burundiHigh"]
+}, {
+    "id": "BJ",
+    "value1": 3631,
+    "map": ["beninLow", "beninHigh"]
+}, {
+    "id": "BL",
+    "value1": 2255,
+    "map": []
+}, {
+    "id": "BM",
+    "value1": 4695,
+    "map": ["bermudaLow", "bermudaHigh"]
+}, {
+    "id": "BN",
+    "value1": 4004,
+    "map": ["bruneiDarussalamLow", "bruneiDarussalamHigh"]
+}, {
+    "id": "BO",
+    "value1": 3021,
+    "map": ["boliviaLow", "boliviaHigh"]
+}, {
+    "id": "BQ",
+    "value1": 2192,
+    "map": ["bonaireSintEustatiusSabaLow", "bonaireSintEustatiusSabaHigh"]
+}, {
+    "id": "BR",
+    "value1": 4642,
+    "map": ["brazilLow", "brazilHigh"]
+}, {
+    "id": "BS",
+    "value1": 1463,
+    "map": []
+}, {
+    "id": "BT",
+    "value1": 4827,
+    "map": ["bhutanLow", "bhutanHigh"]
+}, {
+    "id": "BV",
+    "value1": 2091,
+    "map": []
+}, {
+    "id": "BW",
+    "value1": 4251,
+    "map": ["botswanaLow", "botswanaHigh"]
+}, {
+    "id": "BY",
+    "value1": 3949,
+    "map": ["belarusLow", "belarusHigh"]
+}, {
+    "id": "BZ",
+    "value1": 2068,
+    "map": ["belizeLow", "belizeHigh"]
+}, {
+    "id": "CA",
+    "value1": 1808,
+    "map": ["canadaLow", "canadaHigh"]
+}, {
+    "id": "CC",
+    "value1": 1374,
+    "map": []
+}, {
+    "id": "CD",
+    "value1": 2730,
+    "map": ["congoDRLow", "congoDRHigh"]
+}, {
+    "id": "CF",
+    "value1": 1895,
+    "map": ["centralAfricanRepublicLow", "centralAfricanRepublicHigh"]
+}, {
+    "id": "CG",
+    "value1": 2730,
+    "map": ["congoLow", "congoHigh"]
+}, {
+    "id": "CH",
+    "value1": 4959,
+    "map": ["switzerlandLow", "switzerlandHigh"]
+}, {
+    "id": "CI",
+    "value1": 2669,
+    "map": []
+}, {
+    "id": "CK",
+    "value1": 2878,
+    "map": []
+}, {
+    "id": "CL",
+    "value1": 2812,
+    "map": ["chileLow", "chileHigh"]
+}, {
+    "id": "CM",
+    "value1": 4780,
+    "map": ["cameroonLow", "cameroonHigh"]
+}, {
+    "id": "CN",
+    "value1": 3897,
+    "map": ["chinaLow", "chinaHigh"]
+}, {
+    "id": "CO",
+    "value1": 2983,
+    "map": ["colombiaLow", "colombiaHigh", "colombiaMuniLow", "colombiaMuniHigh"]
+}, {
+    "id": "CR",
+    "value1": 2066,
+    "map": ["costaRicaLow", "costaRicaHigh"]
+}, {
+    "id": "CU",
+    "value1": 2882,
+    "map": []
+}, {
+    "id": "CV",
+    "value1": 1479,
+    "map": ["capeVerdeLow", "capeVerdeHigh"]
+}, {
+    "id": "CW",
+    "value1": 4956,
+    "map": ["curacaoLow", "curacaoHigh"]
+}, {
+    "id": "CX",
+    "value1": 4090,
+    "map": []
+}, {
+    "id": "CY",
+    "value1": 1348,
+    "map": ["cyprusLow", "cyprusHigh", "cyprusNorthCyprusLow", "cyprusNorthCyprusHigh"]
+}, {
+    "id": "CZ",
+    "value1": 3189,
+    "map": ["czechiaLow", "czechiaHigh"]
+}, {
+    "id": "DE",
+    "value1": 2266,
+    "map": ["germanyLow", "germanyHigh"]
+}, {
+    "id": "DJ",
+    "value1": 3257,
+    "map": ["djiboutiLow", "djiboutiHigh"]
+}, {
+    "id": "DK",
+    "value1": 2533,
+    "map": ["denmarkLow", "denmarkHigh"]
+}, {
+    "id": "DM",
+    "value1": 2998,
+    "map": ["dominicaLow", "dominicaHigh"]
+}, {
+    "id": "DO",
+    "value1": 4383,
+    "map": ["dominicanRepublicLow", "dominicanRepublicHigh", "dominicanRepublicMuniLow", "dominicanRepublicMuniHigh"]
+}, {
+    "id": "DZ",
+    "value1": 2005,
+    "map": ["algeriaLow", "algeriaHigh"]
+}, {
+    "id": "EC",
+    "value1": 3068,
+    "map": ["ecuadorLow", "ecuadorHigh"]
+}, {
+    "id": "EE",
+    "value1": 1139,
+    "map": ["estoniaLow", "estoniaHigh"]
+}, {
+    "id": "EG",
+    "value1": 4123,
+    "map": ["egyptLow", "egyptHigh"]
+}, {
+    "id": "EH",
+    "value1": 4757,
+    "map": []
+}, {
+    "id": "ER",
+    "value1": 2687,
+    "map": []
+}, {
+    "id": "ES",
+    "value1": 2467,
+    "map": ["spainLow", "spainHigh", "spainProvincesLow", "spainProvincesHigh"]
+}, {
+    "id": "ET",
+    "value1": 4165,
+    "map": []
+}, {
+    "id": "FI",
+    "value1": 2338,
+    "map": ["finlandLow", "finlandHigh"]
+}, {
+    "id": "FJ",
+    "value1": 3626,
+    "map": ["fijiEastLow", "fijiEastHigh", "fijiWestLow", "fijiWestHigh"]
+}, {
+    "id": "FK",
+    "value1": 3551,
+    "map": []
+}, {
+    "id": "FM",
+    "value1": 4418,
+    "map": []
+}, {
+    "id": "FO",
+    "value1": 4012,
+    "map": ["faroeIslandsLow", "faroeIslandsHigh"]
+}, {
+    "id": "FR",
+    "value1": 4375,
+    "map": ["franceLow", "franceHigh", "franceDepartmentsLow", "franceDepartmentsHigh"]
+}, {
+    "id": "GA",
+    "value1": 2790,
+    "map": ["gabonLow", "gabonHigh"]
+}, {
+    "id": "GB",
+    "value1": 2959,
+    "map": ["ukLow", "ukHigh", "ukCountiesLow", "ukCountiesHigh"]
+}, {
+    "id": "GB-CHA",
+    "value1": 1321,
+    "map": ["channelIslandsLow", "channelIslandsHigh"]
+}, {
+    "id": "GD",
+    "value1": 3230,
+    "map": []
+}, {
+    "id": "GE",
+    "value1": 1271,
+    "map": ["georgiaLow", "georgiaHigh", "georgiaSouthOssetiaLow", "georgiaSouthOssetiaHigh"]
+}, {
+    "id": "GF",
+    "value1": 3794,
+    "map": ["frenchGuianaLow", "frenchGuianaHigh"]
+}, {
+    "id": "GG",
+    "value1": 2480,
+    "map": []
+}, {
+    "id": "GH",
+    "value1": 1172,
+    "map": []
+}, {
+    "id": "GI",
+    "value1": 3428,
+    "map": []
+}, {
+    "id": "GL",
+    "value1": 1687,
+    "map": ["greenlandLow", "greenlandHigh"]
+}, {
+    "id": "GM",
+    "value1": 4422,
+    "map": []
+}, {
+    "id": "GN",
+    "value1": 4552,
+    "map": ["guineaLow", "guineaHigh"]
+}, {
+    "id": "GP",
+    "value1": 2935,
+    "map": []
+}, {
+    "id": "GQ",
+    "value1": 1739,
+    "map": ["equatorialGuineaLow", "equatorialGuineaHigh"]
+}, {
+    "id": "GR",
+    "value1": 4484,
+    "map": ["greeceLow", "greeceHigh"]
+}, {
+    "id": "GS",
+    "value1": 2336,
+    "map": []
+}, {
+    "id": "GT",
+    "value1": 4582,
+    "map": []
+}, {
+    "id": "GU",
+    "value1": 3308,
+    "map": []
+}, {
+    "id": "GW",
+    "value1": 4647,
+    "map": []
+}, {
+    "id": "GY",
+    "value1": 3216,
+    "map": []
+}, {
+    "id": "HK",
+    "value1": 3535,
+    "map": ["hongKongLow", "hongKongHigh"]
+}, {
+    "id": "HM",
+    "value1": 3442,
+    "map": []
+}, {
+    "id": "HN",
+    "value1": 2568,
+    "map": ["hondurasLow", "hondurasHigh"]
+}, {
+    "id": "HR",
+    "value1": 4478,
+    "map": ["croatiaLow", "croatiaHigh"]
+}, {
+    "id": "HT",
+    "value1": 1004,
+    "map": []
+}, {
+    "id": "HU",
+    "value1": 2362,
+    "map": ["hungaryLow", "hungaryHigh"]
+}, {
+    "id": "ID",
+    "value1": 4148,
+    "map": ["indonesiaLow", "indonesiaHigh"]
+}, {
+    "id": "IE",
+    "value1": 3166,
+    "map": ["irelandLow", "irelandHigh"]
+}, {
+    "id": "IL",
+    "value1": 1494,
+    "map": ["israelLow", "israelHigh", "israelPalestineLow", "israelPalestineHigh"]
+}, {
+    "id": "IM",
+    "value1": 1621,
+    "map": []
+}, {
+    "id": "IN",
+    "value1": 2387,
+    "map": ["indiaLow", "indiaHigh"]
+}, {
+    "id": "IO",
+    "value1": 3361,
+    "map": []
+}, {
+    "id": "IQ",
+    "value1": 4516,
+    "map": []
+}, {
+    "id": "IR",
+    "value1": 4351,
+    "map": []
+}, {
+    "id": "IS",
+    "value1": 3293,
+    "map": ["icelandLow", "icelandHigh"]
+}, {
+    "id": "IT",
+    "value1": 4497,
+    "map": ["italyLow", "italyHigh"]
+}, {
+    "id": "JE",
+    "value1": 2578,
+    "map": []
+}, {
+    "id": "JM",
+    "value1": 2853,
+    "map": []
+}, {
+    "id": "JO",
+    "value1": 1064,
+    "map": []
+}, {
+    "id": "JP",
+    "value1": 1840,
+    "map": ["japanLow", "japanHigh"]
+}, {
+    "id": "KE",
+    "value1": 2752,
+    "map": ["kenyaLow", "kenyaHigh"]
+}, {
+    "id": "KG",
+    "value1": 1335,
+    "map": ["kyrgyzstanLow", "kyrgyzstanHigh"]
+}, {
+    "id": "KH",
+    "value1": 2554,
+    "map": ["cambodiaLow", "cambodiaHigh"]
+}, {
+    "id": "KI",
+    "value1": 1652,
+    "map": []
+}, {
+    "id": "KM",
+    "value1": 1699,
+    "map": []
+}, {
+    "id": "KN",
+    "value1": 4937,
+    "map": []
+}, {
+    "id": "KP",
+    "value1": 3469,
+    "map": ["northKoreaLow", "northKoreaHigh"]
+}, {
+    "id": "KR",
+    "value1": 2590,
+    "map": ["southKoreaLow", "southKoreaHigh"]
+}, {
+    "id": "KT",
+    "value1": 4700,
+    "map": ["stKittsNevisLow", "stKittsNevisHigh"]
+}, {
+    "id": "KW",
+    "value1": 3848,
+    "map": []
+}, {
+    "id": "KY",
+    "value1": 1751,
+    "map": []
+}, {
+    "id": "KZ",
+    "value1": 3516,
+    "map": ["kazakhstanLow", "kazakhstanHigh"]
+}, {
+    "id": "LA",
+    "value1": 3548,
+    "map": []
+}, {
+    "id": "LB",
+    "value1": 2316,
+    "map": []
+}, {
+    "id": "LC",
+    "value1": 2217,
+    "map": ["saintLuciaLow", "saintLuciaHigh"]
+}, {
+    "id": "LI",
+    "value1": 1656,
+    "map": ["liechtensteinLow", "liechtensteinHigh"]
+}, {
+    "id": "LK",
+    "value1": 4500,
+    "map": ["sriLankaLow", "sriLankaHigh"]
+}, {
+    "id": "LR",
+    "value1": 1034,
+    "map": []
+}, {
+    "id": "LS",
+    "value1": 1069,
+    "map": []
+}, {
+    "id": "LT",
+    "value1": 4715,
+    "map": ["lithuaniaLow", "lithuaniaHigh"]
+}, {
+    "id": "LU",
+    "value1": 3024,
+    "map": []
+}, {
+    "id": "LV",
+    "value1": 3813,
+    "map": ["latviaLow", "latviaHigh"]
+}, {
+    "id": "LY",
+    "value1": 4183,
+    "map": []
+}, {
+    "id": "MA",
+    "value1": 2610,
+    "map": ["moroccoLow", "moroccoHigh"]
+}, {
+    "id": "MC",
+    "value1": 2377,
+    "map": []
+}, {
+    "id": "MD",
+    "value1": 4443,
+    "map": ["moldovaLow", "moldovaHigh"]
+}, {
+    "id": "ME",
+    "value1": 1760,
+    "map": []
+}, {
+    "id": "MF",
+    "value1": 2522,
+    "map": []
+}, {
+    "id": "MG",
+    "value1": 3155,
+    "map": []
+}, {
+    "id": "MH",
+    "value1": 2897,
+    "map": []
+}, {
+    "id": "MK",
+    "value1": 2699,
+    "map": []
+}, {
+    "id": "ML",
+    "value1": 2629,
+    "map": ["maliLow", "maliHigh"]
+}, {
+    "id": "MM",
+    "value1": 4391,
+    "map": []
+}, {
+    "id": "MN",
+    "value1": 4161,
+    "map": ["mongoliaLow", "mongoliaHigh"]
+}, {
+    "id": "MO",
+    "value1": 2990,
+    "map": []
+}, {
+    "id": "MP",
+    "value1": 2875,
+    "map": []
+}, {
+    "id": "MQ",
+    "value1": 3317,
+    "map": []
+}, {
+    "id": "MR",
+    "value1": 2632,
+    "map": []
+}, {
+    "id": "MS",
+    "value1": 4285,
+    "map": []
+}, {
+    "id": "MT",
+    "value1": 3135,
+    "map": ["maltaLow", "maltaHigh"]
+}, {
+    "id": "MU",
+    "value1": 2031,
+    "map": []
+}, {
+    "id": "MV",
+    "value1": 2005,
+    "map": ["maldivesLow", "maldivesHigh", "maldivesIslandsLow", "maldivesIslandsHigh"]
+}, {
+    "id": "MW",
+    "value1": 2199,
+    "map": []
+}, {
+    "id": "MX",
+    "value1": 4152,
+    "map": ["mexicoLow", "mexicoHigh"]
+}, {
+    "id": "MY",
+    "value1": 4451,
+    "map": ["malaysiaLow", "malaysiaHigh"]
+}, {
+    "id": "MZ",
+    "value1": 3565,
+    "map": []
+}, {
+    "id": "NA",
+    "value1": 2223,
+    "map": ["namibiaLow", "namibiaHigh"]
+}, {
+    "id": "NC",
+    "value1": 1028,
+    "map": []
+}, {
+    "id": "NE",
+    "value1": 1893,
+    "map": []
+}, {
+    "id": "NF",
+    "value1": 4763,
+    "map": []
+}, {
+    "id": "NG",
+    "value1": 1222,
+    "map": ["nigeriaLow", "nigeriaHigh"]
+}, {
+    "id": "NI",
+    "value1": 4081,
+    "map": ["nicaraguaLow", "nicaraguaHigh"]
+}, {
+    "id": "NL",
+    "value1": 3691,
+    "map": ["netherlandsLow", "netherlandsHigh"]
+}, {
+    "id": "NO",
+    "value1": 3429,
+    "map": ["norwayLow", "norwayHigh"]
+}, {
+    "id": "NP",
+    "value1": 2180,
+    "map": ["nepalLow", "nepalHigh"]
+}, {
+    "id": "NR",
+    "value1": 2829,
+    "map": []
+}, {
+    "id": "NU",
+    "value1": 4721,
+    "map": []
+}, {
+    "id": "NZ",
+    "value1": 3301,
+    "map": ["newZealandLow", "newZealandHigh"]
+}, {
+    "id": "OM",
+    "value1": 2852,
+    "map": ["omanLow", "omanHigh"]
+}, {
+    "id": "PA",
+    "value1": 3887,
+    "map": ["panamaLow", "panamaHigh"]
+}, {
+    "id": "PE",
+    "value1": 1437,
+    "map": ["peruLow", "peruHigh"]
+}, {
+    "id": "PF",
+    "value1": 3992,
+    "map": []
+}, {
+    "id": "PG",
+    "value1": 4443,
+    "map": []
+}, {
+    "id": "PH",
+    "value1": 4815,
+    "map": ["philippinesLow", "philippinesHigh"]
+}, {
+    "id": "PK",
+    "value1": 2400,
+    "map": ["pakistanLow", "pakistanHigh"]
+}, {
+    "id": "PL",
+    "value1": 3477,
+    "map": ["polandLow", "polandHigh"]
+}, {
+    "id": "PM",
+    "value1": 4151,
+    "map": ["stPierreMiquelonLow", "stPierreMiquelonHigh"]
+}, {
+    "id": "PN",
+    "value1": 3200,
+    "map": []
+}, {
+    "id": "PR",
+    "value1": 2218,
+    "map": ["puertoRicoLow", "puertoRicoHigh"]
+}, {
+    "id": "PS",
+    "value1": 4324,
+    "map": ["palestineLow", "palestineHigh"]
+}, {
+    "id": "PT",
+    "value1": 1525,
+    "map": ["portugalLow", "portugalHigh", "portugalRegionsLow", "portugalRegionsHigh"]
+}, {
+    "id": "PW",
+    "value1": 1375,
+    "map": []
+}, {
+    "id": "PY",
+    "value1": 2419,
+    "map": ["paraguayLow", "paraguayHigh"]
+}, {
+    "id": "QA",
+    "value1": 4963,
+    "map": ["qatarLow", "qatarHigh"]
+}, {
+    "id": "RE",
+    "value1": 2025,
+    "map": []
+}, {
+    "id": "RO",
+    "value1": 1393,
+    "map": ["romaniaLow", "romaniaHigh"]
+}, {
+    "id": "RS",
+    "value1": 3746,
+    "map": ["serbiaLow", "serbiaHigh", "serbiaNoKosovoLow", "serbiaNoKosovoHigh"]
+}, {
+    "id": "RU",
+    "value1": 2422,
+    "map": ["russiaLow", "russiaHigh", "russiaCrimeaLow", "russiaCrimeaHigh"]
+}, {
+    "id": "RW",
+    "value1": 2824,
+    "map": []
+}, {
+    "id": "SA",
+    "value1": 2210,
+    "map": ["saudiArabiaLow", "saudiArabiaHigh"]
+}, {
+    "id": "SB",
+    "value1": 4877,
+    "map": ["solomonIslandsLow", "solomonIslandsHigh"]
+}, {
+    "id": "SC",
+    "value1": 1150,
+    "map": ["seychellesLow", "seychellesHigh"]
+}, {
+    "id": "SD",
+    "value1": 1953,
+    "map": ["sudanLow", "sudanHigh"]
+}, {
+    "id": "SE",
+    "value1": 3676,
+    "map": ["swedenLow", "swedenHigh"]
+}, {
+    "id": "SG",
+    "value1": 2168,
+    "map": ["singaporeLow", "singaporeHigh"]
+}, {
+    "id": "SH",
+    "value1": 4337,
+    "map": ["saintHelenaLow", "saintHelenaHigh"]
+}, {
+    "id": "SI",
+    "value1": 2341,
+    "map": ["sloveniaLow", "sloveniaHigh", "sloveniaRegionsLow", "sloveniaRegionsHigh"]
+}, {
+    "id": "SJ",
+    "value1": 3629,
+    "map": ["svalbardLow", "svalbardHigh"]
+}, {
+    "id": "SK",
+    "value1": 3012,
+    "map": ["slovakiaLow", "slovakiaHigh"]
+}, {
+    "id": "SL",
+    "value1": 1532,
+    "map": []
+}, {
+    "id": "SM",
+    "value1": 1876,
+    "map": ["sanMarinoLow", "sanMarinoHigh"]
+}, {
+    "id": "SN",
+    "value1": 4616,
+    "map": ["senegalLow", "senegalHigh"]
+}, {
+    "id": "SO",
+    "value1": 3396,
+    "map": ["somaliaLow", "somaliaHigh"]
+}, {
+    "id": "SR",
+    "value1": 4602,
+    "map": []
+}, {
+    "id": "SS",
+    "value1": 4285,
+    "map": []
+}, {
+    "id": "ST",
+    "value1": 1029,
+    "map": ["saoTomePrincipeLow", "saoTomePrincipeHigh"]
+}, {
+    "id": "SV",
+    "value1": 3263,
+    "map": ["elSalvadorLow", "elSalvadorHigh"]
+}, {
+    "id": "SX",
+    "value1": 4375,
+    "map": []
+}, {
+    "id": "SY",
+    "value1": 4499,
+    "map": ["syriaLow", "syriaHigh"]
+}, {
+    "id": "SZ",
+    "value1": 3268,
+    "map": ["eswatiniLow", "eswatiniHigh"]
+}, {
+    "id": "TC",
+    "value1": 2732,
+    "map": []
+}, {
+    "id": "TD",
+    "value1": 3176,
+    "map": ["chadLow", "chadHigh"]
+}, {
+    "id": "TF",
+    "value1": 3351,
+    "map": []
+}, {
+    "id": "TG",
+    "value1": 3631,
+    "map": []
+}, {
+    "id": "TH",
+    "value1": 2946,
+    "map": ["thailandLow", "thailandHigh"]
+}, {
+    "id": "TJ",
+    "value1": 3267,
+    "map": ["tajikistanLow", "tajikistanHigh"]
+}, {
+    "id": "TK",
+    "value1": 3761,
+    "map": []
+}, {
+    "id": "TL",
+    "value1": 1161,
+    "map": []
+}, {
+    "id": "TM",
+    "value1": 4266,
+    "map": []
+}, {
+    "id": "TN",
+    "value1": 1366,
+    "map": ["tunisiaLow", "tunisiaHigh"]
+}, {
+    "id": "TO",
+    "value1": 3423,
+    "map": []
+}, {
+    "id": "TR",
+    "value1": 2052,
+    "map": ["turkeyLow", "turkeyHigh"]
+}, {
+    "id": "TT",
+    "value1": 1627,
+    "map": []
+}, {
+    "id": "TV",
+    "value1": 1343,
+    "map": []
+}, {
+    "id": "TW",
+    "value1": 4470,
+    "map": []
+}, {
+    "id": "TZ",
+    "value1": 4034,
+    "map": ["tanzaniaLow", "tanzaniaHigh"]
+}, {
+    "id": "UA",
+    "value1": 2384,
+    "map": ["ukraineLow", "ukraineHigh"]
+}, {
+    "id": "UG",
+    "value1": 3996,
+    "map": []
+}, {
+    "id": "UM",
+    "value1": 2827,
+    "map": []
+}, {
+    "id": "US",
+    "value1": 2818,
+    "map": ["usaLow", "usaHigh", "usaTerritoriesLow", "usaTerritoriesHigh", "usaTerritories2Low", "usaTerritories2High"]
+}, {
+    "id": "UY",
+    "value1": 2899,
+    "map": []
+}, {
+    "id": "UZ",
+    "value1": 4152,
+    "map": ["uzbekinstanLow", "uzbekinstanHigh"]
+}, {
+    "id": "VA",
+    "value1": 4643,
+    "map": ["vaticanLow", "vaticanHigh"]
+}, {
+    "id": "VC",
+    "value1": 4671,
+    "map": ["saintVincentLow", "saintVincentHigh"]
+}, {
+    "id": "VE",
+    "value1": 4772,
+    "map": ["venezuelaLow", "venezuelaHigh"]
+}, {
+    "id": "VG",
+    "value1": 1764,
+    "map": []
+}, {
+    "id": "VI",
+    "value1": 2314,
+    "map": []
+}, {
+    "id": "VN",
+    "value1": 1832,
+    "map": ["vietnamLow", "vietnamHigh"]
+}, {
+    "id": "VU",
+    "value1": 3304,
+    "map": []
+}, {
+    "id": "WF",
+    "value1": 3057,
+    "map": []
+}, {
+    "id": "WS",
+    "value1": 3433,
+    "map": ["samoaLow", "samoaHigh"]
+}, {
+    "id": "YE",
+    "value1": 3999,
+    "map": ["yemenLow", "yemenHigh"]
+}, {
+    "id": "YT",
+    "value1": 3799,
+    "map": []
+}, {
+    "id": "ZA",
+    "value1": 1130,
+    "map": ["southAfricaLow", "southAfricaHigh"]
+}, {
+    "id": "ZM",
+    "value1": 3673,
+    "map": ["zambiaLow", "zambiaHigh"]
+}, {
+    "id": "ZW",
+    "value1": 4898,
+    "map": ["zimbabweLow", "zimbabweHigh"]
+}, {
+    "id": "XK",
+    "value1": 4320,
+    "map": ["kosovoLow", "kosovoHigh"]
+}
+]
