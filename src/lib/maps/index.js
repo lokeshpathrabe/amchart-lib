@@ -9,18 +9,18 @@ import Series from './components/series';
 
 am4core.useTheme(am4themes_animated);
 
-class DruvaMaps {
+class AMMaps {
 
     createMap(id, config) {
         config.id = id;
         this.validateConfig(config);
         let configFactory = this.initConfigFactory(config)
-        let druvaMap = this.initMap(configFactory);
+        let amMap = this.initMap(configFactory);
 
-        this.addSeries(druvaMap, configFactory);
-        this.addLegend(druvaMap, configFactory);
+        this.addSeries(amMap, configFactory);
+        this.addLegend(amMap, configFactory);
 
-        return druvaMap;
+        return amMap;
     }
 
     validateConfig(config) {
@@ -53,22 +53,22 @@ class DruvaMaps {
         return new Maps[type](cfg);
     }
 
-    addSeries(druvaMap, configFactory) {
+    addSeries(amMap, configFactory) {
         const list = configFactory.seriesConfig;
         list.forEach((series) => {
             const { type, ...cfg } = series
-            Series[type].add(druvaMap.getMapObj(), cfg);
+            Series[type].add(amMap.getMapObj(), cfg);
         });
     }
 
-    addLegend(druvaMap, configFactory) {
+    addLegend(amMap, configFactory) {
         const config = configFactory.legendConfig;
         if(config) {
             const [type, cfg] = config;
-            Legends[type].add(druvaMap.getMapObj(), cfg);
+            Legends[type].add(amMap.getMapObj(), cfg);
         }
     }
 }
 
-const DruvaMapsFactory = new DruvaMaps();
-export { DruvaMapsFactory };
+const AMMapsFactory = new AMMaps();
+export { AMMapsFactory };

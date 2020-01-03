@@ -4,7 +4,7 @@ import ConfigFactory from "./configStore";
 import Legends from "./components/legends";
 import Series from "./components/series";
 
-class DruvaCharts {
+class AMCharts {
 
     createChart(id, config) {
         config = {id, ...config};
@@ -61,6 +61,6 @@ class DruvaCharts {
     }
 }
 
-const DruvaChartsFactory = new DruvaCharts();
+const AMChartsFactory = new AMCharts();
 
-export { DruvaChartsFactory } 
+export { AMChartsFactory } 

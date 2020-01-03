@@ -2,7 +2,7 @@ import * as am4core from "@amcharts/amcharts4/core";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import Maps from '../../lib/maps/const/map';
 import mapData from './mapData.json';
-import { DruvaMapsFactory } from './../../lib/maps';
+import { AMMapsFactory } from './../../lib/maps';
 import MAP_SERIES from '../../lib/maps/const/series';
 import drillDownMapData from './drillDownMap.json';
 import capitalsData from './capitals.json';
@@ -23,7 +23,7 @@ export default function InitMap() {
         }]
     }
 
-    let map = DruvaMapsFactory.createMap('worldmap', mapConfig);
+    let map = AMMapsFactory.createMap('worldmap', mapConfig);
     map.bindData(MAP_SERIES.USA_MAP_SERIES, JSON.parse(JSON.stringify(mapData.USData)));
     map.bindData(MAP_SERIES.WORLD_MAP_SERIES, JSON.parse(JSON.stringify(mapData.worldData)));
     map.addHomeButton();
@@ -48,7 +48,7 @@ export default function InitMap() {
         }]
     }
 
-    let heatMap = DruvaMapsFactory.createMap('worldHeatmap', heatMapConfig);
+    let heatMap = AMMapsFactory.createMap('worldHeatmap', heatMapConfig);
     heatMap.bindData(MAP_SERIES.WORLD_MAP_SERIES, JSON.parse(JSON.stringify(mapData.worldData)));
     heatMap.addZoomControl();
     heatMap.addHomeButton();
@@ -75,7 +75,7 @@ export default function InitMap() {
         }
     ]
     }
-    let capitalsMap = DruvaMapsFactory.createMap('capitalsMap', capitalsMapConfig);
+    let capitalsMap = AMMapsFactory.createMap('capitalsMap', capitalsMapConfig);
     capitalsMap.bindData(MAP_SERIES.IMAGE_SERIES, JSON.parse(JSON.stringify(capitalsData)));
     capitalsMap.addZoomControl();
     capitalsMap.addHomeButton();
@@ -117,7 +117,7 @@ export default function InitMap() {
     ]
     }
 
-    let drillDownHeatMap = DruvaMapsFactory.createMap('worldDrillDownHeatmap', drillDownHeatMapConfig);
+    let drillDownHeatMap = AMMapsFactory.createMap('worldDrillDownHeatmap', drillDownHeatMapConfig);
     drillDownHeatMap.bindData(MAP_SERIES.WORLD_MAP_SERIES, JSON.parse(JSON.stringify(drillDownMapData)));
     drillDownHeatMap.addZoomControl();
     drillDownHeatMap.addHomeButton((map) => {

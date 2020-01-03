@@ -1,9 +1,9 @@
 module.exports = {
   type: 'web-app',
   npm: {
-    umd: 'DruvaAmCharts',
+    umd: 'AmChartsLib',
     umd: {
-      global: 'DruvaAmCharts',
+      global: 'AmChartsLib',
       entry: './src/lib/index.js',
       externals: {
         'amcharts4': 'amcharts4'
