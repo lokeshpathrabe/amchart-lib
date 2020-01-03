@@ -1,6 +1,6 @@
 import * as am4core from "@amcharts/amcharts4/core";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
-import DruvaChart from '../../lib/charts';
+import { DruvaChartsFactory } from '../../lib/charts';
 import Charts from '../../lib/charts/const/chart';
 
 import CHART_LEGENDS from '../../lib/charts/const/legend';
@@ -67,7 +67,7 @@ export default function InitChart() {
             value: 'valueY'
         }
     }
-    let chart1 = new DruvaChart('stackedColumnSeries', stackedColConfig);
+    let chart1 = DruvaChartsFactory.createChart('stackedColumnSeries', stackedColConfig);
 
     if(chartData.stackedColumnData.length > 7){
         const xAxesTemplate = chart1.getChartObj().xAxes.getIndex(0).renderer.labels.template;
@@ -103,7 +103,7 @@ export default function InitChart() {
            ]
         }
    }
-   let chart2 = new DruvaChart('columnSeries', colConfig);
+   let chart2 = DruvaChartsFactory.createChart('columnSeries', colConfig);
    chart2.bindData(chartData.columnSeriesData);
    setTimeout(() => chart2.bindData(chartData.activityData), 5000);
 
@@ -139,7 +139,7 @@ export default function InitChart() {
         alert("Clicked on " + ev.target.dataItem.categoryX + ": " + ev.target.dataItem.valueY);
     });
 
-   let chart3 = new DruvaChart('activityChart', activityChartConfig);
+   let chart3 = DruvaChartsFactory.createChart('activityChart', activityChartConfig);
    chart3.hideXAxes();
    chart3.hideYAxes();
    chart3.hideYAxesGridLines();
@@ -171,7 +171,7 @@ export default function InitChart() {
         }
    }
 
-   let pieChart = new DruvaChart('pieChart', pieChartConfig);
+   let pieChart = DruvaChartsFactory.createChart('pieChart', pieChartConfig);
    pieChart.bindData(chartData.pieChartData);
    pieChart.setCornerRadius(6);
 }

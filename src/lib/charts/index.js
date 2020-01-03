@@ -4,8 +4,9 @@ import ConfigFactory from "./configStore";
 import Legends from "./components/legends";
 import Series from "./components/series";
 
-export default class DruvaCharts {
-    constructor(id, config) {
+class DruvaCharts {
+
+    createChart(id, config) {
         config = {id, ...config};
         this.validateConfig(config);
         this.initConfigFactory(config);
@@ -40,22 +41,26 @@ export default class DruvaCharts {
     initChart() {
         const [type, cfg] = this.configFactory.chartConfig;
         let chart = new Charts[type](cfg);
-        this.chart = chart.getChartObj();
-        this.addSeries();
-        this.addLegend();
+        let chartObj = chart.getChartObj();
+        this.addSeries(chartObj);
+        this.addLegend(chartObj);
         return chart;
     }
 
-    addSeries() {
+    addSeries(chart) {
         const [type, cfg] = this.configFactory.seriesConfig;
-        Series[type].add(this.chart, cfg);
+        Series[type].add(chart, cfg);
     }
 
-    addLegend() {
+    addLegend(chart) {
         const config = this.configFactory.legendConfig;
         if(config) {
             const [type, cfg] = config;
-            Legends[type].add(this.chart, cfg);
+            Legends[type].add(chart, cfg);
         }
     }
 }
+
+const DruvaChartsFactory = new DruvaCharts();
+
+export { DruvaChartsFactory } 
