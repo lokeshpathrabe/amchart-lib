@@ -6,31 +6,336 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>amChartLib</title>
     <meta name="description" content="">
-  <link href="/amchart-lib/app.bb2b8eaf.css" rel="stylesheet">
-</head>
+  <link href="/app.ea72b3e1.css" rel="stylesheet"></head>
   <body>
     <div id="tittle"></div>
     <div class="tab-body tab-body-chart">
-      <h3>Stacked Column Series Chart</h3>
-      <div id="stackedColumnSeries" class="chart-container"></div>
-      <h3>Column Series</h3>
+      <div>
+        <h2>Stacked Column Series Chart</h2>
+        <div id="stackedColumnSeries" class="chart-container"></div>
+        <div class="stackedColumnSeries sample-code">
+          <strong>Code</strong>
+          <pre><code class="language-js">
+            //Stacked Column Series Chart
+    const stackedColConfig = {
+         //throw error if this element is not present
+        type: Charts.STACKED_COLUMN_SERIES_CHART,
+        xAxis: {
+            category: 'category'
+        },
+        yAxis: {
+          min: 0,
+          max: 100
+        },
+        series: {
+            type: CHART_SERIES.STACKED_COLUMN_SERIES,
+            list: [{ // Will always be as array
+                    color: "#FBC67A",
+                    format: "#",
+                    name: "Files Modification Alerts",
+                    tooltipHTML: "<span>{name}</span> </br> <center><strong>{valueY.value.formatNumber('#')}</strong></center>",
+                    value: "value1"
+                },
+                {
+                    color: "#88A7EC",
+                    format: "#",
+                    name: "Files Encryption Alerts",
+                    tooltipHTML: "<span>{name}</span> </br> <center><strong>{valueY.value.formatNumber('#')}</strong></center>",
+                    value: "value2"
+                },
+                {
+                    color: "#88E6AF",
+                    format: "#",
+                    name: "Files Deletion Alerts",
+                    tooltipHTML: "<span>{name}</span> </br> <center><strong>{valueY.value.formatNumber('#')}</strong></center>",
+                    value: "value3"
+                },
+                {
+                    color: "#EE74A2",
+                    format: "#",
+                    name: "Files Creation Alerts",
+                    tooltipHTML: "<span>{name}</span> </br> <center><strong>{valueY.value.formatNumber('#')}</strong></center>",
+                    value: "value4",
+                    bullet: {
+                        type: CHART_BULLETS.LABEL_BULLET,
+                        bulletText: "{valueY.total}",
+                        fill: '#000',
+                        dy: -20,
+                        fontSize: 20
+                    }
+                }
+            ]},
+        legend: {
+            type: CHART_LEGENDS.LEGEND_WITH_VALUE_TEXT,
+            position: 'right',
+            vAlign: 'bottom',
+            value: 'valueY'
+        }
+    }
+    let chart1 = AMChartsFactory.createChart('stackedColumnSeries', stackedColConfig);
+
+    const xAxesTemplate = chart1.getChartObj().xAxes.getIndex(0).renderer.labels.template;
+    xAxesTemplate.rotation = -90;
+    xAxesTemplate.horizontalCenter = "middle";
+    xAxesTemplate.verticalCenter = "middle";
+    chart1.bindData(chartData.stackedColumnData);
+          </code></pre>
+        </div>
+      </div>
+      
+      <h2>Column Series</h2>
       <div id="columnSeries" class="chart-container"></div>
-      <h3>Trend Chart</h3>
+      <div class="columnSeries sample-code">
+        <pre><code class="language-js">
+          // Column Series Chart
+          const colConfig = {
+              //throw error if this element is not present
+             type: Charts.COLUMN_SERIES_CHART,
+             xAxis: {
+                 category: 'country'
+             },
+             series: {
+                 type: CHART_SERIES.COLUMN_SERIES,
+                 list: [{ // Will always be as array
+                         color: "#FBC87A",
+                         format: "#",
+                         name: "Files Modification Alerts",
+                         tooltipText: "{valueY.value}",
+                         value: "visits",
+                         adapter: {
+                          "fill": (fill, target, key, chart) => {
+                           return chart.colors.getIndex(target.dataItem.index);
+                         }
+                      }
+                     }
+                 ]
+              }
+         }
+         let chart2 = AMChartsFactory.createChart('columnSeries', colConfig);
+         chart2.bindData(chartData.columnSeriesData);
+         //Asynchronously bind data to chart
+         setTimeout(() => chart2.bindData(chartData.activityData), 5000);
+        </code></pre>
+      </div>
+      <h2>Trend Chart</h2>
       <div id="activityChart" class="chart-container"></div>
-      <h3>Pie Chart</h3>
+      <div class="activityChart sample-code">
+        <pre><code class="language-js">
+          // Column Series Chart
+    const activityChartConfig = {
+    type: Charts.COLUMN_SERIES_CHART,
+    xAxis: {
+        category: 'country'
+    },
+    series: {
+        type: CHART_SERIES.COLUMN_SERIES,
+        list: [{
+                color: "#FBC87A",
+                format: "#",
+                name: "Files Modification Alerts",
+                tooltipText: "{valueY.value}",
+                value: "visits",
+                adapter: {
+                "fill": (fill, target, key, chart) => {
+                    if(target.dataItem.valueY > 2000){
+                        return am4core.color("#EE74A2");
+                    }
+                    return am4core.color("#8A98B6");;
+                }
+            }
+            }
+        ]
+    }
+    }
+    //Bind click events on column series
+    chart2.onColumnClick(function(ev) {
+        alert("Clicked on " + ev.target.dataItem.categoryX + ": " + ev.target.dataItem.valueY);
+    });
+
+   let chart3 = AMChartsFactory.createChart('activityChart', activityChartConfig);
+   chart3.hideXAxes();
+   chart3.hideYAxes();
+   chart3.hideYAxesGridLines();
+   chart3.hidexAxesGridLines();
+   chart3.bindData(chartData.activityData);
+        </code></pre>
+      </div>
+      <h2>Pie Chart</h2>
       <div id="pieChart" class="chart-container"></div>
+      <div class="pieChart sample-code">
+        <pre><code class="language-js">
+          // PieChart
+    let pieChartConfig = {
+       type: Charts.PIE_CHART,
+       xAxis: {
+           category: 'country'
+       },
+       series: {
+           type: CHART_SERIES.PIE_SERIES,
+           list: [{ // Will always be as array
+                   tooltipHTML: "<b>{category}: {value}</b>",
+                   value: "value",
+                   radiusValue: "value"
+               }
+           ]
+        },
+        legend: {
+            type: CHART_LEGENDS.LEGEND_WITH_VALUE_TEXT,
+            position: 'bottom',
+            vAlign: 'bottom',
+            valueText: '{value}'
+        }
+   }
+
+   let pieChart = AMChartsFactory.createChart('pieChart', pieChartConfig);
+   pieChart.bindData(chartData.pieChartData);
+   pieChart.setCornerRadius(6);
+        </code></pre>
+      </div>
     </div>
     <div class="tab-body-map tab-body">
-      <h3>World Map</h3>
+      <h2>World Map</h2>
       <div id="worldmap" class="map-container"></div>
-      <h3>World Heat Map</h3>
-      <div id="worldHeatmap" class="map-container"></div>
-      <h3>Location World Map</h3>
-      <div id="capitalsMap" class="map-container"></div>
-      <h3>Drill Down Location World Map</h3>
-      <div id="worldDrillDownHeatmap" class="map-container"></div>
-    </div>
-  <script>!function(e){function r(r){for(var n,i,a=r[0],l=r[1],c=r[2],p=0,s=[];p<a.length;p++)i=a[p],o[i]&&s.push(o[i][0]),o[i]=0;for(n in l)Object.prototype.hasOwnProperty.call(l,n)&&(e[n]=l[n]);for(f&&f(r);s.length;)s.shift()();return u.push.apply(u,c||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var l=t[a];0!==o[l]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={3:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise(function(r,n){t=o[e]=[r,n]});r.push(t[2]=n);var u,a=document.getElementsByTagName("head")[0],l=document.createElement("script");l.charset="utf-8",l.timeout=120,i.nc&&l.setAttribute("nonce",i.nc),l.src=function(e){return i.p+""+({2:"xlsx"}[e]||e)+"."+{2:"a200123f"}[e]+".js"}(e),u=function(r){l.onerror=l.onload=null,clearTimeout(c);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src,i=new Error("Loading chunk "+e+" failed.\n("+n+": "+u+")");i.type=n,i.request=u,t[1](i)}o[e]=void 0}};var c=setTimeout(function(){u({type:"timeout",target:l})},12e4);l.onerror=l.onload=u,a.appendChild(l)}return Promise.all(r)},i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/",i.oe=function(e){throw console.error(e),e};var a=window.webpackJsonp=window.webpackJsonp||[],l=a.push.bind(a);a.push=r,a=a.slice();for(var c=0;c<a.length;c++)r(a[c]);var f=l;t()}([]);</script>
+      <div class="worldmap sample-code">
+        <pre><code class="language-js">
+          // world map
+    am4core.useTheme(am4themes_animated);
+    let mapConfig = {
+        type: Maps.WORLD_MAP,
+        series: [{
+            type: MAP_SERIES.WORLD_MAP_SERIES,
+            exclude: ["AQ"],
+            tooltipText: "{name}: {value}"
+        },
+        {
+            type: MAP_SERIES.USA_MAP_SERIES,
+            tooltipText: "{name}: {value}"
+        }]
+    }
 
-  <script type="text/javascript" src="/amchart-lib/vendor.3c1f8fbb.js"></script><script type="text/javascript" src="/amchart-lib/app.75c76075.js"></script></body>
+    let map = AMMapsFactory.createMap('worldmap', mapConfig);
+    map.bindData(MAP_SERIES.USA_MAP_SERIES, JSON.parse(JSON.stringify(mapData.USData)));
+    map.bindData(MAP_SERIES.WORLD_MAP_SERIES, JSON.parse(JSON.stringify(mapData.worldData)));
+    map.addHomeButton();
+        </code></pre>
+      </div>
+      <h2>World Heat Map</h2>
+      <div id="worldHeatmap" class="map-container"></div>
+      <div class="worldHeatmap sample-code">
+        <pre><code class="language-js">
+          // world heat map
+    let heatMapConfig = {
+        type: Maps.WORLD_MAP,
+        series: [{
+            type: MAP_SERIES.WORLD_MAP_SERIES,
+            exclude: ["AQ"],
+            tooltipText: "{name}: {value}",
+            color: "#00B2E0",
+            heatRules: {
+                colorMin: 4,
+                colorMax: -0.3,
+                legendMinValue: 1000,
+                legendMaxValue: 5000,
+            },
+            onZoom: (map) => {
+                console.log(map);
+            }
+        }]
+    }
+
+    let heatMap = AMMapsFactory.createMap('worldHeatmap', heatMapConfig);
+    heatMap.bindData(MAP_SERIES.WORLD_MAP_SERIES, JSON.parse(JSON.stringify(mapData.worldData)));
+    heatMap.addZoomControl();
+    heatMap.addHomeButton();
+        </code></pre>
+      </div>
+      <h2>Location World Map</h2>
+      <div id="capitalsMap" class="map-container"></div>
+      <div class="capitalsMap sample-code">
+        <pre><code class="language-js">
+          //World capitals map
+    let capitalsMapConfig = {
+        type: Maps.WORLD_MAP,
+        series: [{
+            type: MAP_SERIES.WORLD_MAP_SERIES,
+            exclude: ["AQ"],
+            color: "#00B2E0",
+            onZoom: (map, series) => {
+                console.log(map);
+            }
+        },
+        {
+            type: MAP_SERIES.IMAGE_SERIES,
+            latitude: "latitude",
+            longitude: "longitude",
+            imagePath: "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z",
+            tooltipText: "{title}",
+            tooltipHTML: ""
+        }
+    ]
+    }
+    let capitalsMap = AMMapsFactory.createMap('capitalsMap', capitalsMapConfig);
+    capitalsMap.bindData(MAP_SERIES.IMAGE_SERIES, JSON.parse(JSON.stringify(capitalsData)));
+    capitalsMap.addZoomControl();
+    capitalsMap.addHomeButton();
+
+        </code></pre>
+      </div>
+      <h2>Drill Down Location World Map</h2>
+      <div id="worldDrillDownHeatmap" class="map-container"></div>
+      <div class="worldDrillDownHeatmap sample-code">
+        <pre><code class="language-js">
+          //World Heat map with drill down zoom
+    let drillDownHeatMapConfig = {
+        type: Maps.WORLD_MAP,
+        series: [{
+            type: MAP_SERIES.DRILL_DOWN_WORLD_SERIES,
+            exclude: ["AQ"],
+            tooltipText: "{name}: {value}",
+            color: "#00B2E0",
+            value: 'value1',
+            heatRules: {
+                colorMin: 4,
+                colorMax: -0.3,
+                legendMinValue: 1000,
+                legendMaxValue: 5000,
+            },
+            onZoom: (map, target) => {
+                map.series.each((mapSeries) => {
+                    if(mapSeries.name === MAP_SERIES.IMAGE_SERIES) {
+                        if(!mapSeries.visible) {
+                            mapSeries.show();
+                        }
+                        mapSeries.data = JSON.parse(JSON.stringify(capitalsData))
+                    }
+                });
+            }
+        },
+        {
+            type: MAP_SERIES.IMAGE_SERIES,
+            latitude: "latitude",
+            longitude: "longitude",
+            imagePath: "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z",
+            tooltipText: "{title}",
+            tooltipHTML: ""
+        }
+    ]
+    }
+
+    let drillDownHeatMap = AMMapsFactory.createMap('worldDrillDownHeatmap', drillDownHeatMapConfig);
+    drillDownHeatMap.bindData(MAP_SERIES.WORLD_MAP_SERIES, JSON.parse(JSON.stringify(drillDownMapData)));
+    drillDownHeatMap.addZoomControl();
+    drillDownHeatMap.addHomeButton((map) => {
+        map.series.each((mapSeries) => {
+            if([MAP_SERIES.IMAGE_SERIES, MAP_SERIES.DRILL_DOWN_COUNTRY_SERIES].indexOf(mapSeries.name) > -1){
+                mapSeries.hide();
+            }
+        });
+    });
+        </code></pre>
+      </div>
+    </div>
+  <script>!function(e){function r(r){for(var n,i,a=r[0],l=r[1],c=r[2],p=0,s=[];p<a.length;p++)i=a[p],o[i]&&s.push(o[i][0]),o[i]=0;for(n in l)Object.prototype.hasOwnProperty.call(l,n)&&(e[n]=l[n]);for(f&&f(r);s.length;)s.shift()();return u.push.apply(u,c||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var l=t[a];0!==o[l]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={3:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise(function(r,n){t=o[e]=[r,n]});r.push(t[2]=n);var u,a=document.getElementsByTagName("head")[0],l=document.createElement("script");l.charset="utf-8",l.timeout=120,i.nc&&l.setAttribute("nonce",i.nc),l.src=function(e){return i.p+""+({2:"xlsx"}[e]||e)+"."+{2:"e2b51098"}[e]+".js"}(e),u=function(r){l.onerror=l.onload=null,clearTimeout(c);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src,i=new Error("Loading chunk "+e+" failed.\n("+n+": "+u+")");i.type=n,i.request=u,t[1](i)}o[e]=void 0}};var c=setTimeout(function(){u({type:"timeout",target:l})},12e4);l.onerror=l.onload=u,a.appendChild(l)}return Promise.all(r)},i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/",i.oe=function(e){throw console.error(e),e};var a=window.webpackJsonp=window.webpackJsonp||[],l=a.push.bind(a);a.push=r,a=a.slice();for(var c=0;c<a.length;c++)r(a[c]);var f=l;t()}([]);</script>
+
+  <script type="text/javascript" src="/vendor.66468d0f.js"></script><script type="text/javascript" src="/app.49da3c12.js"></script></body>
 </html>
