@@ -1,15 +1,22 @@
 body{
     height: 100%;
+    padding: 10px;
 }
 
 .chart-container, .map-container {
-    display: block;
-    width: 700px;
+    display: inline-block;
+    width: 48%;
     height: 400px;
-    margin: auto;
     margin-bottom: 80px;
 }
 
 #tittle{
     text-align: center;
+}
+
+.sample-code{
+    display: inline-block;
+    height: 400px;
+    overflow-y: auto;
+    width: 48%;
 }

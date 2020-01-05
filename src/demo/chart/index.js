@@ -69,14 +69,11 @@ export default function InitChart() {
     }
     let chart1 = AMChartsFactory.createChart('stackedColumnSeries', stackedColConfig);
 
-    if(chartData.stackedColumnData.length > 7){
-        const xAxesTemplate = chart1.getChartObj().xAxes.getIndex(0).renderer.labels.template;
-        xAxesTemplate.rotation = -90;
-        xAxesTemplate.horizontalCenter = "middle";
-        xAxesTemplate.verticalCenter = "middle";
-    }
+    const xAxesTemplate = chart1.getChartObj().xAxes.getIndex(0).renderer.labels.template;
+    xAxesTemplate.rotation = -90;
+    xAxesTemplate.horizontalCenter = "middle";
+    xAxesTemplate.verticalCenter = "middle";
     chart1.bindData(chartData.stackedColumnData);
-
 
 
     // Column Series Chart
@@ -105,18 +102,19 @@ export default function InitChart() {
    }
    let chart2 = AMChartsFactory.createChart('columnSeries', colConfig);
    chart2.bindData(chartData.columnSeriesData);
+   //Asynchronously bind data to chart
    setTimeout(() => chart2.bindData(chartData.activityData), 5000);
+
 
     // Column Series Chart
     const activityChartConfig = {
-    //throw error if this element is not present
     type: Charts.COLUMN_SERIES_CHART,
     xAxis: {
         category: 'country'
     },
     series: {
         type: CHART_SERIES.COLUMN_SERIES,
-        list: [{ // Will always be as array
+        list: [{
                 color: "#FBC87A",
                 format: "#",
                 name: "Files Modification Alerts",
@@ -134,7 +132,7 @@ export default function InitChart() {
         ]
     }
     }
-
+    //Bind click events on column series
     chart2.onColumnClick(function(ev) {
         alert("Clicked on " + ev.target.dataItem.categoryX + ": " + ev.target.dataItem.valueY);
     });
@@ -147,9 +145,7 @@ export default function InitChart() {
    chart3.bindData(chartData.activityData);
 
     // PieChart
-
     let pieChartConfig = {
-        //throw error if this element is not present
        type: Charts.PIE_CHART,
        xAxis: {
            category: 'country'

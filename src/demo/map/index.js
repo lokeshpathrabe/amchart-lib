@@ -1,11 +1,12 @@
 import * as am4core from "@amcharts/amcharts4/core";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import Maps from '../../lib/maps/const/map';
-import mapData from './mapData.json';
 import { AMMapsFactory } from './../../lib/maps';
 import MAP_SERIES from '../../lib/maps/const/series';
-import drillDownMapData from './drillDownMap.json';
-import capitalsData from './capitals.json';
+
+import mapData from './data/mapData.json';
+import drillDownMapData from './data/drillDownMap.json';
+import capitalsData from './data/capitals.json';
 
 export default function InitMap() {
     // world map
@@ -60,9 +61,8 @@ export default function InitMap() {
             type: MAP_SERIES.WORLD_MAP_SERIES,
             exclude: ["AQ"],
             color: "#00B2E0",
-            onZoom: (map, series) => {
+            onZoom: (map) => {
                 console.log(map);
-                console.log(series);                
             }
         },
         {
